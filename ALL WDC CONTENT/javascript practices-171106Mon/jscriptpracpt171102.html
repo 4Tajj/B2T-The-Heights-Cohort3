@@ -7,58 +7,16 @@
 	<body>
 		<!-- THIS IS A COMMENT -->
 		<h1>Look at console to see message</h1>
-		<h1>Tomorrows Trey's Birthday!</h1>
-		<h1 id= "pie">He likes cherry pie</h1>
-
-		<!-- gets the element specifically -->
-		<h2 id="New Text"></h2>
-		 <!-- between <script></script> -->
-		 
+		 between <script></script> -->
 		<script type ="text/javascript">
-			//gets list of all h1 elements in the webpage; quotations were used since it was the actually text 'h1'
-			var h1Elements = document.getElementsByTagName('h1');
+			//*Displays message to console /*Multi line comment
+			//* Place javascript at the end since it loads from top to bottom and user need to see the HTML or webpage; making sure all your elements are listed firs <!-- There are two ways to use Java: 1. Internal we use is in the body after the elements between the style elements (<script></sript)-->
+			console.log("Hello World")
+			console.log("boom") 
+			</script>
 
-
-			/* Displays message to console Multi line comment
-			Place javascript at the end since it loads from top to bottom and user need to see the HTML or webpage; making sure all your elements are listed firs <!-- There are two ways to use Java: 1. Internal we use is in the body after the elements between the style elements script */
-			
-			console.log("Hello World");
-			console.log("boom");
-
-			//CONCATENATION: THE '+' IS ALLOWING ME TO JOIN TO VALUES
-			console.log("My favorite color is " +prompt() );
-
-			// '' are not used here since the text "h1Elements" is defined
-			
-			console.log(h1Elements);
-
-			//gets element of specified id
-			var pieElement = document.getElementById('pie');
-			console.log(pieElement);
-
-			//changes text of element
-			pieElement.innerHTML = 'MORE PIE!!!';
-
-			//changes color  of the element "purple" using style.color element making it static
-			pieElement.style.color = 'purple';
-
-			//changes color of element to whatever is typed in the prompt making it dynamic 
-			pieElement.style.color = prompt('Give me color')
-			
-			//we made an h2 with no text. We used javascript to put text inside a specific element by giving it an Id, inside the ''.
-			document.getElementById('New Text').innerHTML = 'I am lost';
-		
-
-		/*Multi-line
-		 comment*/
-
-		</script>
-
-		<!-- USING JAVASCRIPT WITH EXTERNAL FILE -->
-		<script src="jspt1.js" type="text/javascript"></script>
-		<!-- Place javascript at the end since it loads from top to bottom and user needs to see the HTML or webpage; making sure all your elements are listed first --> <!-- There are two ways to use Java: 1. Internal we use is in the body after the elements --> 
-
-		 
+			<!-- USING JAVASCRIPT WITH EXTERNAL FILE -->
+			<script src="jspt1.js" tpye="text/javascript"></script>
 
 	</body>
 </html>
