@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<!--Give element id to access it in JavaScript-->
+		<h1 id="first"></h1>
+
+		<!--INTERNAL JAVASCRIPT-->
+		<script type="text/javascript">
+			//get the html element with the id "first"
+			document.getElementById("first").innerHTML = "brownies are good";
+
+			//PRACTICING CONCATENATION
+			console.log(5 + 2);
+			console.log("I am " + 78 + " years old");
+			console.log("Number: " + 25 + 12);
+			console.log("Number: " + (25 + 12));
+
+			//PRACTICING VARIABLES
+			var x;
+			x = true;
+			console.log(x);
+
+			var y = "54";
+			console.log(y);
+
+			//PRACTICING PROMPT()
+			var input = prompt("What is your name?");
+			console.log(input);
+
+			//PRACTICING NUMBER METHODS
+			//converts user input into a integer number
+			var num = parseInt( prompt("Hey, Enter NUM") );
+
+			//PRACTICING STRING METHODS
+			var str = "Trey asking for text";
+			//length gets amount of characters in string
+			console.log("str length is: "+ str.length);
+
+			//indexOf gets position of specified character
+			console.log("e is in position "+ str.indexOf('e'));
+
+			//charAt get character of specified index
+			console.log("the first char of str is "+ str.charAt(0));
+
+			var food = "watermelon";
+			//Slice gets specified section of string
+			//will return "lon"
+			console.log( food.slice(7, food.length) );
+			//will return "water"
+			console.log( food.slice(0, food.length/2) );
+			//will return "melon"
+			console.log( food.slice(food.length/2, food.length) );
+			
+			var name = 'Trey';
+			console.log(name);
+			//will return "reyT"
+			console.log( name.slice(1)+name.charAt(0) );
+		</script>
+		<!--EXTERNAL JAVASCRIPT-->
+		<script type="text/javascript" src="myScript.js"></script>
+	</body>
+</html>

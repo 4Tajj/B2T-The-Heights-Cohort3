@@ -1,0 +1,1 @@
+console.log ("Do you know Pig Latin?");
