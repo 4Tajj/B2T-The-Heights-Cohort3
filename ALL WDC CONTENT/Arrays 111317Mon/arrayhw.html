@@ -9,28 +9,29 @@
 
 		<script type = "text/javascript">
 
-			//get id with the element 'demo' and edit it's text
-			document.getElementById('demo').innerHTML = 'Add more fruit' + fruits.push(fruits);
-			var word = 'with'
-			var input = prompt('Add more fruit');
-		
-			var fruits = ['apple', 'orange', 'kiwi',];
+			//give var a name
+			var fruits = ['apple','orange','kiwi',];
+
+			//Sort the element in alphabetical order
+			fruits.sort();
 			
-			console.log('apple', 'orange', 'kiwi',);
-			//Push adds a new element to the end of the friuts array, and returns the new length
+			//Print to the console
+			console.log('apple','orange','kiwi');
+			
+			//get id with the element 'demo' and edit its text
+			document.getElementById('demo').innerHTML = "Add more fruit " + fruits.join  (' with ');
+
+
+			//Get input from user, has nothing to do with the message
+			var input = prompt('Add more fruit');
+
+			// Push adds a new element to the end of the fruits array, and returns to the new length
 			fruits.push(input);
 			console.log(fruits);
-
-			//Shows the value given in the console, used to keep track of your elements' length inside the array
+			
+			//Shows the value given in the console, used to keep track of your elements length inside the array
 			console.log(fruits.push(input));
-			//Sorts elements 	alphabetically
-			fruits.sort();
 
-			//Displays elements separated by "with" in HTML text element
-			console.log('apple', 'orange', 'kiwi');
-			console.log(' apple' + word);
-			console.log(' orange' + word);
-			console.log(' kiwi' +  word);
 			
 
 
