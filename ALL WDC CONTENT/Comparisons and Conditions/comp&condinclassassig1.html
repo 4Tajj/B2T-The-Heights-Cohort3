@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+
+		<script type="text/javascript">
+			var num1 = 1;
+			var num2= 2;
+			var num3 = 3;
+			var x = 3
+
+			var num1 = prompt('enter a number');
+			var num2 = prompt('enter a number');
+			var num3 = prompt('enter a number');
+			var x = prompt('enter a number');
+			//prints false
+			console.log(num1 == x); //checks if equal to 
+
+			//prints true
+			console.log(num2 < x); //checks if less than
+
+			//prints to console false
+			console.log(num3 > x); //checks if greater than
+
+			//prints to the console true
+			console.log(num2 != x); //check if not equal to
+
+			//Prints true
+			console.log(num3 >= x); //checks if greater than or equal to
+
+			//prints false
+			console.log(x === x); //checks if value AND data type is equal
+
+			//prints true
+			console.log(num3 == 'x'); //checks if value is equal
+
+			//prints false
+			console.log(num2 === 'x'); //check if value AND data is equal
+
+			
+			var x = prompt('Enter number');
+			if(parseInt(num1) <= x) {
+				//only prints if number is greater than or equal 3
+				console.log('The number is less than or equal to 3!!');
+
+			}else if(parseInt(num3) >= x ){
+				//only prints if num is greater than 3 or if it is equal to three
+			console.log('The number is greater than or equal to 3');
+
+			}else{
+				//prints if all previous conditions fail
+				console.log('Number is less than 3 or greater than 3');
+
+			}
+
+			//if (input == 'yes') is true, basketBallFan = 'Godlen State'
+			//if (input == 'yes') is false, basketBallFan = 'celtics'
+			var input = prompt("Do you like to win?");
+			var basketBallFan;
+				if(input = 'yes'){
+					basketBallFan = 'Golden State';
+				}else{
+					basketBallFan = 'Celtics';
+				}
+
+			//Easier way to write the above code
+			var basketBallFan = (input == 'yes')? 'Golden State' : 'Celtics';
+
+			//Switch
+			switch(new Date().getMonth()){
+				case 8:
+					console.log('It\s Sept');
+				case 9:
+					console.log('It\s Oct');
+				case 10:
+					console.log('I\s Nov');
+				case 11:
+					console.log('It\s Dec');
+			}
+
+			
+
+			//if pet is 'cat' print message
+			//if pet is 'dog' print message
+			//if pet is 'bird' print message
+			//if pet is 'none' print message 'you have no soul'
+			var pet = prompt('What kind of pet do you have').toLowerCase();
+			switch(pet){
+				case 'cat':
+					console.log('you are a cat lover');
+				break;
+				case 'dog':
+					console.log('you are a dog lover');
+				break;
+				case 'bird':
+					console.log('you are a bird lover');
+				break;
+				default:
+					console.log('you have no soul')
+					break;
+
+			}
+
+
+		</script>
+	<body>
+		<h1>This is Comparision and Conditionals Exercise</h1>
+		<br>
+		<br>
+		<p></p>
+	</body>
+</html>
