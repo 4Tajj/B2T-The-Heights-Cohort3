@@ -14,21 +14,15 @@
 		
 		<!-- INTERNAL JAVASCRIPT-->
 		<script type= "text/JavaScript">
-			//get the html element with the id "first" - used DOM to add input from prompt to the HTML element
-			document.getElementById("first").innerHTML = "This is my DOM to add input from the prompt to the HTML element?" ;
-
-			 
-
+			
 			//PRACTICING PROMPT()
 			var input = prompt("What is your name?");
-			console.log(input); 
-
-		</script>
-			<!-- EXTERNAL JAVASCRIPT-->
-			<script type="text/javascript" src= "jspt1.js">
 			
-		</script>
+			//get the html element with the id "first" - used DOM to add input from prompt to the HTML element
+			document.getElementById("first").innerHTML = "Hello my name is " + input;
 
+		</script>
+			
 		<!--Created HTML web page with text element to say "Hello my name is"-->
 		<h1>Hello my name is</h1>
 		<br>
