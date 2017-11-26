@@ -1,23 +1,22 @@
-<!DOCTYPE html>
-<html>
-<body>
+<DOCTYPE html>
+	<html>
+		<head>
+			<title></title>
+		</head>
+		<body>
+			<!-- Give element an id to access it in JavaScript -->
+			<h1 id= "first"></h1>
 
-<p>Click the button to demonstrate the Pig Latin.</p>
+			<!--INTERNAL JAVASCRIPT-->
+			<script type = "text/javascript">
+				//get the HTML element with the id "first"
+				document.getElementById("first").innerHTML = "igpay is pig in Pig Latin";
 
-<button onclick="myFunction()">Try it</button>
+				var name = 'Pig';
+				var name2 = 'igpay';
+				var input = prompt("Enter Pig");
+				document.write(name2);
 
-<p id="demo"></p>
-
-<script>
-function myFunction() {
-    var person = prompt("Please enter Pig",);
-    var convert = "igpay"
-    if (person != null) {
-        document.getElementById("demo").innerHTML =
-        "Hello " + convert + "! This is Pig Latin?";
-    }
-}
-</script>
-
-</body>
-</html>
+			</script>
+		</body>
+	</html>
