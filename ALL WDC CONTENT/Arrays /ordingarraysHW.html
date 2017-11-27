@@ -6,7 +6,7 @@
 
 	<p>The sort() method sorts an array alphabetically.</p>
 
-	<!-- creates element id for HTML edit -->
+	<!-- gets element directly -->
 	<p id="demo"></p>
 
 	<script>
@@ -19,12 +19,12 @@
 		fruits.push(input);
 		document.getElementById("demo").innerHTML = fruits;
 		//sorts fruits in alphabetical order
-	    fruits.sort(input);
-    	document.getElementById("demo").innerHTML = fruits;
+	    	fruits.sort(input);
+    		document.getElementById("demo").innerHTML = fruits;
 
    		//adds "with" to the string fruits
-    	var string1 = fruits.join( " with ");
-    	document.write(string1)
+    		var string1 = fruits.join( " with ");
+    		document.write(string1)
 
 
 	</script>
