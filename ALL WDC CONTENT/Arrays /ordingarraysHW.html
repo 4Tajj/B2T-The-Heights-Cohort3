@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<body>
+
+	<h2>Task: Array and DOM</h2>
+
+	<p>The sort() method sorts an array alphabetically.</p>
+
+	<!-- creates element id for HTML edit -->
+	<p id="demo"></p>
+
+	<script>
+		//creating my variables
+		var input = prompt("Enter a fruit");
+		var fruits = ["apple","orange", "kiwi",];
+		//gets the element id
+		document.getElementById("demo").innerHTML = fruits;
+		//pushes user input to the end of the array
+		fruits.push(input);
+		document.getElementById("demo").innerHTML = fruits;
+		//sorts fruits in alphabetical order
+	    fruits.sort(input);
+    	document.getElementById("demo").innerHTML = fruits;
+
+   		//adds "with" to the string fruits
+    	var string1 = fruits.join( " with ");
+    	document.write(string1)
+
+
+	</script>
+
+
+	</body>
+</html>
