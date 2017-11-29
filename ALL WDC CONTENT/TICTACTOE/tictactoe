@@ -1,0 +1,55 @@
+TIC TAC TOE NOTES
+
+2 player game
+	each player has own symbol
+	each player has one turn
+Need a 3 X 3 grid
+
+OBJECTIVE of Game is to get 3 of the same symbols in a row
+Player wins if 3 of their symbols are
+	diagnol
+	horizontal
+	vertical
+Game is tied when there are no more moves to make AND no one has won
+
+THINGS TO DO:
+Create Grid
+Initialize 'X' as first player
+	when 'X' makes move it is then 'O' turn
+	and vice versa
+When grid is clicked display player's symbol
+	need function that will display player's symbol on clicked square
+		need player's symbol
+		need a way to get that specific square
+		ALSO check if square has been clicked
+			if square does not have symbol
+				display player's symbol
+				switch players
+					depending on what player symbol is , swithc to other symbol
+						if symbol X 
+							make symbol O
+						else
+							make symbol X
+				evalute board
+
+	event listener to call function when square is clicked
+Evaluate the board
+	need value of all swuares in grid
+	Check to see if 3 in a row
+		Horizontals
+		0 == 1 && 1 == 2
+		3 == 4 && 4 == 5
+		6 == 7 && 7 == 8
+		Verticals
+		0 == 3 && 3 == 6
+		1 == 4 && 4 == 7
+		2 == 5 && 5 == 8
+		Diagonals
+		0 == 4 && 4 == 8
+		2 == 4 && 4 == 6
+	if not 3 in a row:
+			check if tied if all squares are not empty
+
+012
+345
+678
