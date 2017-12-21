@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		
+		<title>Day 2 JS Practice</title>
+	
+	</head>
+	
+	<body>
+
+		<!-- Give element id to access it in JavaScript -->
+		<h1 id="first"></h1>
+		
+		<!-- INTERNAL JAVASCRIPT-->
+		<script type= "text/JavaScript">
+			
+			//PRACTICING PROMPT()
+			var input = prompt("What is your name?");
+			
+			//get the html element with the id "first" - used DOM to add input from prompt to the HTML element
+			document.getElementById("first").innerHTML = "Hello my name is " + input;
+
+		</script>
+			
+		<!--Created HTML web page with text element to say "Hello my name is"-->
+		<h1>Hello my name is</h1>
+		<br>
+		<br>
+		<p>In this code, I created my HTML web page with the text element saying "Hello my name is"; used prompt("Enter name"), to get input witin JavaScrip, and finally, I used DOM to add input from prompt to the HTML element!</p>
+
+	
+	</body>
+
+</html>
